@@ -89,7 +89,7 @@
 
     <h3>1.1 On-Device Sensor Processing &amp; Local Diagnostics</h3>
     <ul>
-      <li><strong>No Camera Recording or Upload:</strong> Camera frames are analyzed strictly in volatile RAM on your handset to highlight concentrated optical reflections and near-infrared luminance hotspots. No photos or videos are saved, stored, or transmitted.</li>
+      <li><strong>No Camera Recording or Upload:</strong> OmniGuard looks at the live camera picture to spot small lens reflections. It does not take photos, does not record video, and nothing leaves your phone. Android will now ask for camera permission. Its message mentions photos and video because that is Android's standard camera wording for every app. Camera frames are analyzed strictly in volatile RAM on your handset to highlight concentrated optical reflections and near-infrared luminance hotspots. No photos or videos are saved, stored, or transmitted.</li>
       <li><strong>Zero Microphone / Audio Access:</strong> OmniGuard explicitly removes and blocks <code>android.permission.RECORD_AUDIO</code>. The application never accesses, records, or listens to your microphone.</li>
       <li><strong>Zero GPS Coordinate Tracking:</strong> OmniGuard never tracks, logs, stores, or transmits your physical GPS coordinates or location history.</li>
       <li><strong>Local-Only PDF Inspection Logs:</strong> Optional Room Privacy Inspection Logs (with a SHA-256 integrity checksum) are generated locally on your device from your active session's optical, wireless, and magnetometer readings and shared only when you explicitly invoke the native OS share sheet.</li>
